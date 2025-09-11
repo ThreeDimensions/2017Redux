@@ -3,13 +3,11 @@ campaignTrail_temp.candidate_json = JSON.parse("[{\"model\": \"campaign_trail.ca
 
 campaignTrail_temp.opponents_default_json = JSON.parse("[{\"election\": 20, \"candidates\": [201, 23, 203, 200, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174]}]");
 
-campaignTrail_temp.opponents_weighted_json = JSON.parse("[{\"election\": 20, \"candidates\": [201, 200, 23, 203, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174]}]");
+campaignTrail_temp.opponents_weighted_json = JSON.parse("[{\"election\": 20, \"candidates\": [201, 23, 203, 200, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174]}]");
 
 campaignTrail_temp.running_mate_json = JSON.parse("[{\"model\": \"campaign_trail.running_mate\", \"pk\": 106, \"fields\": {\"candidate\": 200, \"running_mate\": 204}}, {\"model\": \"campaign_trail.running_mate\", \"pk\": 106, \"fields\": {\"candidate\": 200, \"running_mate\": 205}}, {\"model\": \"campaign_trail.running_mate\", \"pk\": 106, \"fields\": {\"candidate\": 200, \"running_mate\": 206}}, {\"model\": \"campaign_trail.running_mate\", \"pk\": 106, \"fields\": {\"candidate\": 200, \"running_mate\": 207}}, {\"model\": \"campaign_trail.running_mate\", \"pk\": 106, \"fields\": {\"candidate\": 200, \"running_mate\": 208}}, {\"model\": \"campaign_trail.running_mate\", \"pk\": 106, \"fields\": {\"candidate\": 201, \"running_mate\": 209}}, {\"model\": \"campaign_trail.running_mate\", \"pk\": 106, \"fields\": {\"candidate\": 201, \"running_mate\": 210}}, {\"model\": \"campaign_trail.running_mate\", \"pk\": 106, \"fields\": {\"candidate\": 201, \"running_mate\": 211}}, {\"model\": \"campaign_trail.running_mate\", \"pk\": 106, \"fields\": {\"candidate\": 201, \"running_mate\": 212}}, {\"model\": \"campaign_trail.running_mate\", \"pk\": 106, \"fields\": {\"candidate\": 201, \"running_mate\": 213}}, {\"model\": \"campaign_trail.running_mate\", \"pk\": 106, \"fields\": {\"candidate\": 23, \"running_mate\": 214}}, {\"model\": \"campaign_trail.running_mate\", \"pk\": 106, \"fields\": {\"candidate\": 23, \"running_mate\": 215}}, {\"model\": \"campaign_trail.running_mate\", \"pk\": 106, \"fields\": {\"candidate\": 23, \"running_mate\": 216}}, {\"model\": \"campaign_trail.running_mate\", \"pk\": 106, \"fields\": {\"candidate\": 23, \"running_mate\": 217}}, {\"model\": \"campaign_trail.running_mate\", \"pk\": 106, \"fields\": {\"candidate\": 23, \"running_mate\": 218}}]");
 
 campaignTrail_temp.difficulty_level_json = JSON.parse("[{\"model\": \"campaign_trail.difficulty_level\", \"pk\": 1, \"fields\": {\"name\": \"Cakewalk\", \"multiplier\": 1.3}}, {\"model\": \"campaign_trail.difficulty_level\", \"pk\": 2, \"fields\": {\"name\": \"Very Easy\", \"multiplier\": 1.2}}, {\"model\": \"campaign_trail.difficulty_level\", \"pk\": 3, \"fields\": {\"name\": \"Easy\", \"multiplier\": 1.1}}, {\"model\": \"campaign_trail.difficulty_level\", \"pk\": 4, \"fields\": {\"name\": \"Quite Easy\", \"multiplier\": 1.05}}, {\"model\": \"campaign_trail.difficulty_level\", \"pk\": 5, \"fields\": {\"name\": \"Normal\", \"multiplier\": 1.0}}, {\"model\": \"campaign_trail.difficulty_level\", \"pk\": 6, \"fields\": {\"name\": \"Challenging\", \"multiplier\": 0.95}}, {\"model\": \"campaign_trail.difficulty_level\", \"pk\": 7, \"fields\": {\"name\": \"Hard\", \"multiplier\": 0.9}}, {\"model\": \"campaign_trail.difficulty_level\", \"pk\": 8, \"fields\": {\"name\": \"Very Hard\", \"multiplier\": 0.85}}, {\"model\": \"campaign_trail.difficulty_level\", \"pk\": 9, \"fields\": {\"name\": \"Impossible\", \"multiplier\": 0.8}}, {\"model\": \"campaign_trail.difficulty_level\", \"pk\": 10, \"fields\": {\"name\": \"Unthinkable\", \"multiplier\": 0.7}}, {\"model\": \"campaign_trail.difficulty_level\", \"pk\": 11, \"fields\": {\"name\": \"Blowout\", \"multiplier\": 0.6}}, {\"model\": \"campaign_trail.difficulty_level\", \"pk\": 12, \"fields\": {\"name\": \"Disaster\", \"multiplier\": 0.5}}]");
-
-campaignTrail_temp.candidate_dropout_json = JSON.parse("[{\"model\": \"campaign_trail.candidate_dropout\", \"pk\": 1, \"fields\": {\"candidate\": 36, \"affected_candidate\": 18, \"probability\": 1.0}}]");
 
 campaignTrail_temp.temp_election_list = [{"id": 20, "year": 2017, "is_premium": 0, "display_year": "2017 UK"}];
 
@@ -29,10 +27,10 @@ campaignTrail_temp.premier_ab_test_version = -1;
 let style = document.createElement('style');style.innerHTML = `#overall_result {overflow: auto;}`;document.head.appendChild(style);
 
 document.getElementById("header").src = "https://i.imgur.com/DKl0Vq7.png"
-$("#game_window")[0].style.backgroundColor = "#C6B8AB"
+$("#game_window")[0].style.backgroundColor = "#001107"
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#003015"
-nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#C6B8AB"
-document.getElementsByClassName("game_header")[0].style.backgroundColor = "#003015"
+nct_stuff.themes[nct_stuff.selectedTheme].coloring_window = "#CAB8AC"
+document.getElementsByClassName("game_header")[0].style.backgroundColor = "#E4CE9C"
 nct_stuff.themes[nct_stuff.selectedTheme].coloring_title = "#291000"
 $(".container")[0].style.backgroundColor = "#003015"
 document.body.background = "https://i.imgur.com/E42SFx9.jpeg"
@@ -76,7 +74,11 @@ function updateHeader() {
 var headerobserver = new MutationObserver(updateHeader);
 headerobserver.observe(document.documentElement, { childList: true, subtree: true });
 
-HistHexcolour=["#0087DC","#DC241F","#FAA61A","#70147A"]; HistName=[" Theresa May - Conservatives"," Jeremy Corbyn - Labour"," Tim Farron - Liberal Democrats"," Paul Nuttall - UKIP"]; HistEV=[317,262,12,0]; HistPV=["13,636,684","12,977,918","2,371,861","594,068"]; HistPVP=["42.3%","40.0%","7.4%","1.8%"];
+HistHexcolour=["#0087DC","#DC241F","#FAA61A","#FFFF00","#70147A","#6AB023","#D46A4C","#008800","#008240","#99FF66","#9999FF","#F6CB2F","#E0E0E0","#888888"];
+HistName=[" Theresa May - Conservatives"," Jeremy Corbyn - Labour"," Tim Farron - Liberal Democrats","Nicola Sturgeon - SNP", "Paul Nuttall - UKIP", "Caroline Lucas and Jonathan Bartley - Green", "Arlene Foster - DUP", "Gerry Adams - Sinn Féin", "Leanne Wood - Plaid Cymru", "Colum Eastwood - SDLP", "Robin Swann - UUP", "Naomi Long - Alliance", "John Bercow - Speaker", "Independent/Other"];
+HistEV=[317,262,12,35,0,1,10,7,4,0,0,0,1,1]; 
+HistPV=["13,636,684","12,977,918","2,371,861","977,568","594,068","512,327","292,316","238,915","164,466","95,419","83,280","64,553","34,299","289,838"];
+HistPVP=["42.3%","40.0%","7.4%","3.4%","1.8%","1.6%","0.9%","0.7%","0.5%","0.3%","0.3%","0.2%","0.1%","0.9%"];
 
 RecReading=true
 
@@ -85,7 +87,7 @@ campaignTrail_temp.credits = '@BriocheWindows';
 campaignTrail_temp.credits = "<button onclick='credits()'>Briochewindows</button>";
  
 credits = function() {
-  credits = ["CODER", "Briochewindows", "", "WRITERS",  "Briochewindows", "", "PLAYTESTERS", "Astro", "SkyBlue", "CitySlicker", "packerp", "Snazzrazz Mazzlejazz", "amlab19", "TotalRozza", "Fraser", "donut", "McFish", "original name", "A.J", "Killeritch", "General Ta", "AverageLaborPatriot", "_mango", "AngryGandhi", "-And many others!", "", "Special Thanks", "Tomahawk2K (for the coalition system)"]
+  credits = ["CODER", "Briochewindows", "", "WRITERS",  "Briochewindows", "", "PLAYTESTERS", "Astro", "SkyBlue", "CitySlicker", "packerp", "Snazzrazz Mazzlejazz", "amlab19", "TotalRozza", "Fraser", "donut", "McFish", "original name", "A.J", "Killeritch", "General Ta", "AverageLaborPatriot", "_mango", "AngryGandhi", "-And many others!", "", "Special Thanks", "Tomahawk2K (for the coalition system)", "munastronaut (for fixing that coalition bug)"]
   text = "CREDITS:\n\n"
   for (i in credits) {
   	text += credits[i] + "\n"
@@ -93,146 +95,75 @@ credits = function() {
   alert(text)
 }
 
-function addDynamicCSS() {
-    var css = `
-        .inner_window_question h3 .mytooltip{
-            background-color: lightskyblue;
-        }
-
-        .mytooltip {
-            position: relative;
-            display: inline-block;
-            cursor: pointer;
-            background-color: lightblue;
-        }
-
-        .mytooltip .mytooltiptext {
-            width: 240px;
-            background-color: lightblue;
-            color: black;
-            text-align: center;
-            border-radius: 6px;
-            padding: 10px;
-            position: absolute;
-            z-index: 99;
-            bottom: 20%;
-            left: 20%;
-            margin-left: -90px;
-            opacity: 0;
-            transition: opacity 0.3s;
-            border: 1px solid black;
-            pointer-events: none;
-            font-size: 13px !important;
-            line-height: 1.5em !important;
-            font-weight: normal !important;
-            font-style: normal !important;
-        }
-
-        .mytooltip .mytooltiptext img {
-            max-width: 240px;
-            height: auto;
-        }
-
-        .mytooltip:hover .mytooltiptext {
-            opacity: 1;
-            transition-delay: 0.5s;
-        }
-    `;
-
-    var styleElem = document.createElement('style');
-    styleElem.type = 'text/css';
-    
-    styleElem.appendChild(document.createTextNode(css));
-    
-    document.head.appendChild(styleElem);
-}
-
-addDynamicCSS();
-
-tooltipList = [
-    {searchString: "Fixed Term Parliaments Act 2011", explanationText: "<img src=https://i.imgur.com/bsGO2Zo.png> The Fixed Term Parliaments Act 2011 which, for the first time, set in legislation a default fixed election date for general elections in the United Kingdom to take place every five years. It also requires the Prime Minister receive a two-thirds majority of support from Parliament to call for an early election."},
-    {searchString: "Ruth Davidson", explanationText: "<img src=https://i.imgur.com/NSsnuhD.png> Ruth Davidson is the highly popular leader of the Scottish Conservatives, having great success presenting the Conservative party as the primary opposition to the SNP in Scotland"},
-    {searchString: "Red Wall", explanationText: "The “Red Wall” refers to Labour seats, especially those with high support for leaving the European Union. Potentially, many of these could be gains for the Conservatives in this election."},
-    {searchString: "Blue Wall", explanationText: "The “Blue Wall” refers to Conservative seats in the South of England. It especially refers to those which could potentially be targets for Labour and the Liberal Democrats, many of which voted to remain in 2016."},
-    {searchString: "Historic vote", explanationText: "<img src=https://i.imgur.com/uJIOj3c.png> The 2016 EU Membership Referendum resulted in a victory for Leave, winning with 51.9% of the vote against Remain’s 48.1%."},
-    {searchString: "Article 50", explanationText: "<img src=https://i.imgur.com/7EofICB.png> Article 50 of the Treaty on European Union provides for the possibility of an EU member state leaving the European Union - in accordance with its own constitutional requirements."},
-    {searchString: "Local Elections", explanationText: "The 2017 UK Local elections are to be held on Thursday 4 May 2017. Local elections will be held across Great Britain, with elections to 35 English local authorities and all councils in Scotland and Wales."},
-    {searchString: "Ben Houchen", explanationText: "<img src=https://i.imgur.com/HXuFPDy.png> Ben Houchen is the Conservative candidate standing in the 2017 Tees Valley Combined Authority mayoral election. It is expected the Labour candidate Sue Jeffey will win."},
-    {searchString: "Andy Street", explanationText: "<img src=https://i.imgur.com/WBnxa9V.png> Andy Street is the Conservative candidate standing in the 2017 West Midlands Combined Authority mayoral election. Labour candidate Siôn Simon is most likely to win, although Street has a chance."},
-    {searchString: "Fox hunting", explanationText: "<img src=https://i.imgur.com/hBbO0XU.png> Fox hunting is a traditional activity involving the tracking, chase and, if caught, the killing of a fox, normally a red fox, by trained foxhounds or other scent hounds. A group of unarmed followers, led by a “master of foxhounds” (or “master of hounds”), follow the hounds on foot or on horseback. The practice was banned in 2005 upon the Hunting Act 2004 becoming law."},
-    {searchString: "fox hunting", explanationText: "<img src=https://i.imgur.com/hBbO0XU.png> Fox hunting is a traditional activity involving the tracking, chase and, if caught, the killing of a fox, normally a red fox, by trained foxhounds or other scent hounds. A group of unarmed followers, led by a “master of foxhounds” (or “master of hounds”), follow the hounds on foot or on horseback. The practice was banned in 2005 upon the Hunting Act 2004 becoming law."},
-    {searchString: "Jacob Rees-Mogg", explanationText: "<img src=https://i.imgur.com/CYvI2UM.png> Jacob Rees-Mogg is the Conservative MP from North East Somerset. A backbencher, but one with a strong reputation for his ultra-traditionalist “Victorian” views, and his oppositional behaviour towards more moderate Conservatives."},
-    {searchString: "Hunting Act 2004", explanationText: "<img src=https://i.imgur.com/bsGO2Zo.png> The Hunting Act 2004 bans the hunting of many wild animals like foxes and deer with dogs, subject to strict legal exceptions. The Act came into force on the 18th February 2005. Many traditionalist Conservative MPs want to see its repeal, although this is widely unpopular"},
-    {searchString: "manifesto", explanationText: "<img src=https://i.imgur.com/N8GkG1V.png> In the UK, each political party publishes an election manifesto detailing their party platform and policy proposals. Pictured: The front cover of the Conservatives’ winning 2015 manifesto"},
-    {searchString: "Jeremy Corbyn", explanationText: "<img src=https://i.imgur.com/MEPlhkG.png> Jeremy Corbyn is Labour’s leader of the Opposition. Whilst he’s unpopular with the general public, he has an extremely enthusiastic base of supporters, cheering his name to song in rallies of thousands of people."},
-    {searchString: "Corbyn", explanationText: "<img src=https://i.imgur.com/MEPlhkG.png> Jeremy Corbyn is Labour’s leader of the Opposition. Whilst he’s unpopular with the general public, he has an extremely enthusiastic base of supporters, cheering his name to song in rallies of thousands of people."},
-    {searchString: "Tim Farron", explanationText: "<img src=https://i.imgur.com/jAaINYR.png> Tim Farron is the leader of the Liberal Democrats, taking over after the resignation of former Deputy Prime Minister Nick Clegg."},
-    {searchString: "Paul Nuttall", explanationText: "<img src=https://i.imgur.com/WcRm8CB.png> Paul Nuttall is the leader of UKIP, taking over after Nigel Farage stepped down from leadership in November 2016 to strengthen his relationship with President-elect Donald Trump."},
-    {searchString: "David Cameron", explanationText: "<img src=https://i.imgur.com/xj5pTCG.png> David Cameron was the previous Prime Minister, serving until his resignation after the Brexit vote on 24th June 2016. This led to a leadership election which you won and became the new Prime Minister."},
-    {searchString: "NATO", explanationText: "<img src=https://i.imgur.com/XARUQvD.png> NATO is the North Atlantic Treaty Organisation, an intergovernmental military alliance of 30 member nations with a mutual defence clause, stating “an attack on one is an attack on all” Opponents are concerned about Turkey pulling them into further war in the Middle East."},
-    {searchString: "Trident", explanationText: "<img src=https://i.imgur.com/YjedBg2.png> Trident is the UK’s nuclear weapons programme, overseeing the development, procurement, operation and delivery of nuclear weapons as established by doctrine set by the UK’s Ministry of Defence."},
-    {searchString: "Nigel Farage", explanationText: "<img src=https://i.imgur.com/oGnnlwn.png> Nigel Farage is the former leader of UKIP and a Member of the European Parliament for the South East of England. He was one of the loudest advocates for the UK to leave the EU."},
-    {searchString: "Jeremy Paxman", explanationText: "<img src=https://i.imgur.com/bKGWAhy.png> Jeremy Paxman is a journalist formerly on BBC’s Newsnight and host of University Challenge. He now does occasional work for Channel 4, including interviews of the two main Prime Ministerial candidates."},
-    {searchString: "Amber Rudd", explanationText: "<img src=https://i.imgur.com/DH4bxY5.png> Amber Rudd is your Home Secretary and the Conservative MP from Hastings and Rye."},
-    {searchString: "David Davis", explanationText: "<img src=https://i.imgur.com/3VAqp9b.png> David Davis is your Secretary of State for Exiting the European Union and the Conservative MP for Haltemprice and Howden"},
-    {searchString: "Philip Hammond", explanationText: "<img src=https://i.imgur.com/blymLIL.png> Philip Hammond is your Chancellor of the Exchequer and the Conservative MP from Runnymede and Weybridge."},
-    {searchString: "NHS", explanationText: "<img src=https://i.imgur.com/umvoSP2.png> The National Health Service is the UK’s nationalised healthcare system free at the point of use, paid for by taxes. It was founded in 1948 by Aneurin Bevan, the Minister of Health for Prime Minister Clement Attlee."},
-    {searchString: "grammarschools", explanationText: "<img src=https://i.imgur.com/MSFj1sy.png> Selective grammar schools are schools able to choose their students based on criteria, usually academic. This contrasts with comprehensive schools, which accept all students, regardless of academic achievement or other criteria. Critics say this will further deepen the country’s education gap between rich and poor."},
-    {searchString: "freedom of movement", explanationText: "<img src=https://i.imgur.com/dIAWJeL.png> Freedom of movement refers to the rights of EU citizens to move, reside, and work freely in any EU member state. The right to freedom of movement is granted by Article 21 of the Treaty on the Functioning of the EU."},
-    {searchString: "Freedom of Movement", explanationText: "<img src=https://i.imgur.com/dIAWJeL.png> Freedom of movement refers to the rights of EU citizens to move, reside, and work freely in any EU member state. The right to freedom of movement is granted by Article 21 of the Treaty on the Functioning of the EU."},
-    {searchString: "No deal", explanationText: "<img src=https://i.imgur.com/p7a7Exu.png> If the UK leaves the EU without a deal, trade between the UK and the Single Market will be governed by World Trade Organisation rules, meaning that it would be slowed down and be made more expensive through mandatory customs checks."},
-    {searchString: "Norway", explanationText: "<img src=https://i.imgur.com/igdFHnN.png> Norway is not a member of the EU, but it is a member of the EEA and EFTA. It is a member of the Single Market, but has no say in the laws governing it. A “Norway model” refers to a Soft Brexit where the UK ends up with a similar relationship to this."},
-    {searchString: "Good Friday Agreement", explanationText: "<img src=https://i.imgur.com/56s3V7k.png> The Good Friday Agreement is a pair of agreements signed in 1998 that brought an end to the Troubles, an ethno-religious conflict in Northern Ireland. It guarantees an open border between the UK and Ireland as one of its main priorities."},
-    {searchString: "Common Travel Area", explanationText: "<img src=https://i.imgur.com/Z9HMv7H.png> The Common Travel Area is an open borders agreement between the UK, Ireland and the Crown Dependencies. It is analogous to the EU’s “Schengen area”, which neither the UK or Ireland are a part of."},
-    {searchString: "hard border", explanationText: "<img src=https://i.imgur.com/aMOLfb3.png> In relation to the Irish border question, a “hard border” refers to the presence of customs checks and a limited number of authorised (and physically controlled) crossing points, staffed by customs officers and police."},
-    {searchString: "Scottish independence referendum", explanationText: "<img src=https://i.imgur.com/7BqfqpC.png> In 2014, Scotland had a referendum on whether to become an independent country or remain a part of the United Kingdom. They voted to remain 55.3% to 44.7%."},
-    {searchString: "Benjamin Disraeli", explanationText: "<img src=https://i.imgur.com/QYGMwxj.jpeg> Benjamin Disraeli, the 1st Earl of Beaconsfield was Conservative Prime Minister between 1866 and 1868, and then again in 1874 to 1880. He was famous for his “one nation Conservative” ideology."},
-    {searchString: "Prevent programme", explanationText: "<img src=https://i.imgur.com/N5GlAOx.png> “Prevent” is a part of the UK’s counterterrorism strategy that involves intercepting those who have been radicalised or are vulnerable to it, to deradicalise, or prevent radicalisation in the first place."},
-    {searchString: "EDL", explanationText: "<img src=https://i.imgur.com/x0ZgVS8.png> The EDL is the English Defence League, a far-right Islamophobic group that organises street demonstrations. They often get into fights with counter-protesters"},
-    {searchString: "Crown Court", explanationText: "<img src=https://i.imgur.com/GubT4q1.png> Most violent crimes on this level get sent from the Magistrates’ Courts to the Crown Court. It is responsible for hearing all indictable offences and some “either way” offences."},
-    {searchString: "deliberately nonpartisan", explanationText: "Due to Ofcom regulations, broadcast media cannot be deliberately partisan and biassed to any political party or group. This especially applies during election periods, where media outlets will have to give equal time to both of the main candidates."},
-    {searchString: "Matt Hancock", explanationText: "<img src=https://i.imgur.com/Q6BdtE6.png> Matt Hancock is your Minister of State for Digital and Culture, a lower-level cabinet position in the Department for Culture, Media and Sport. He is also the MP for West Suffolk."},
-    {searchString: "Kwasi Kwarteng", explanationText: "<img src=https://i.imgur.com/pjW9N2g.png> Kwasi Kwarteng is the Conservative MP for Spelthorne. A backbencher, and has been since he entered Parliament in 2010."},
-    {searchString: "Home Secretary", explanationText: "<img src=https://i.imgur.com/RvLMSoV.png> The secretary of state for the Home Department, more commonly known as the Home Secretary is the primary minister responsible for domestic security, immigration policy, and oversight of MI5, the domestic special intelligence agency. It is one of the four Great Offices of State. You served as Home Secretary under David Cameron before he resigned in 2016."},
-    {searchString: "Brexit Secretary", explanationText: "<img src=https://i.imgur.com/p7a7Exu.png> The secretary of state for exiting the European Union, more commonly known as the Brexit Secretary is the primary minister responsible for directing the UK through the process of leaving the European Union."},
-    {searchString: "Chancellor of the Exchequer", explanationText: "<img src=https://i.imgur.com/NxewHOM.png> The Chancellor of the Exchequer is the chief financial minister and is responsible for raising revenue through taxes, borrowing or managing public spending. They have overall responsibility for the work of the Treasury. It is one of the four Great Offices of State."},    
-{searchString: "Hostile Environment", explanationText: "The Hostile Environment refers to policies you implemented as Home Secretary in 2012 under Prime Minister David Cameron, that attempt to coerce illegal migrants to voluntarily leave the UK."}];
 e.collect_results = true;
 
 e = campaignTrail_temp
 
 const startScreenUpdater = setInterval(function() {
-	const goBackButton = document.getElementById("candidate_id_back");
-	const candidateButton = document.getElementById("candidate_id_button");
-	const runningMateButton = document.getElementById("running_mate_id_button");
-	const finalScreenBB = document.getElementById("opponent_selection_id_back");
-	const finalScreenID = document.getElementById("opponent_selection_id_button");
-	const difficultySlider = document.getElementById("difficulty_level");
-	const gameType = document.getElementById("game_type_id");
-
-	if(gameType){
-    	const difficultySlider = document.getElementById("difficulty_level");
-    	difficultySlider.style.display = 'none';
-   	 
-    	multiplier = 1;
-	}
+    const goBackButton = document.getElementById("candidate_id_back");
+    const candidateButton = document.getElementById("candidate_id_button");
+    const runningMateButton = document.getElementById("running_mate_id_button");
+    const finalScreenBB = document.getElementById("opponent_selection_id_back");
+    const finalScreenID = document.getElementById("opponent_selection_id_button");
+    const gameType = document.getElementById("game_type_id");
     
-	if((candidateButton || c != 0)&& !runningMateButton){ // change theme on candidate viewing
-    	var c = document.getElementById("candidate_id").value;
-    	if(c == 200 && !(candidateButton) && !(runningMateButton)) {
-        	goBackButton.click();
-        	const initContinue = document.getElementById("election_id_button");
-        	initContinue.click();
-    	}
-    	else if(c == 201 || c == 23) {
-        	if(candidateButton) {
-            	candidateButton.remove();
-        	}
-    	}
-	}
+    /*if (gameType) {
+        const difficultySlider = document.getElementById("difficulty_level");
+        if (difficultySlider) {
+            difficultySlider.style.display = 'none';
+        }
+        multiplier = 1;
+    }*/
 
-	if(finalScreenID) { // delete back button and delete the interval
-    	finalScreenBB.remove();
-    	clearInterval(startScreenUpdater);
-	}
-}, 1);
+    const candidateSelect = document.getElementById("candidate_id");
+
+    if (candidateSelect && !runningMateButton) {
+        const c = candidateSelect.value;
+
+        if ((c == 200 || c == 201) && !candidateButton) {
+            if (goBackButton) {
+                goBackButton.click();
+            }
+            const initContinue = document.getElementById("election_id_button");
+            if (initContinue) {
+                initContinue.click();
+            }
+        }
+        else if (c == 23) {
+            if (candidateButton) {
+                candidateButton.remove();
+            }
+        }
+    }
+
+    if (finalScreenID) {
+        if (finalScreenBB) {
+            finalScreenBB.remove();
+        }
+        clearInterval(startScreenUpdater);
+    }
+}, 100);
+
+
+function appendStyle() {
+    if (!document.querySelector('meta[name="viewport"]')) {
+        const metaTag = document.createElement('meta');
+        metaTag.name = "viewport";
+        metaTag.content = "width=device-width, initial-scale=1";
+        document.head.appendChild(metaTag);
+    }
+
+    // Custom styles here
+    if (!document.querySelector('#radio-option-style')) {
+        const style = document.createElement('style');
+        style.id = 'radio-option-style';
+        style.textContent = `
+            #results_container, #overall_details_container {
+            color: #fff;
+          }
+        `;
+        document.head.appendChild(style);
+    }
+}
+
+appendStyle();
