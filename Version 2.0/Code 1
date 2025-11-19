@@ -107,16 +107,20 @@ function handleCandidateView() {
     const candidateIdElement = document.getElementById("candidate_id");
     const c = Number(candidateIdElement?.value) ?? -1;
     const candObj = e.candidate_json.find((f) => f.pk === c);
- 
+
+if (candidateButton) {
 if (c === 200 || c === 201) {
     candidateButton.style.display = "";
 } else {
     candidateButton.style.display = "none";
 }
- 
- 
     previousCandidateId = c;
 }
+ if (candidateButton) {
+  // add the code that changes styles here
+}
+}
+
  
 function startCandidateWatcher() {
     setInterval(() => {
@@ -183,3 +187,4 @@ campaignTrail_temp.modBoxTheme = {
     "ui_text_color": "#FFFFFF"
 
     }
+	
